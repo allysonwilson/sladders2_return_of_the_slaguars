@@ -23,7 +23,7 @@ public class Board {
     }
 
 
-    public Object getModifier(int position) {
+    public Modifier getModifier(int position) {
         return modifiers.get(position);
     }
 }

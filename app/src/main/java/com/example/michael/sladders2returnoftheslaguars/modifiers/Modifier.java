@@ -6,5 +6,5 @@ package com.example.michael.sladders2returnoftheslaguars.modifiers;
 
 public interface Modifier {
     int getStartPosition();
-    int offset();
+    int getOffset();
 }

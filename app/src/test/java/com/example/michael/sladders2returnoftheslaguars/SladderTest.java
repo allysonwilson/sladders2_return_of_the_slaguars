@@ -50,6 +50,6 @@ public class SladderTest {
 
     @Test
     public void offset()  {
-        assertEquals( 6, ladder.offset() );
+        assertEquals( 6, ladder.getOffset() );
     }
 }

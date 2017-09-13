@@ -1,5 +1,6 @@
 package com.example.michael.sladders2returnoftheslaguars;
 
+import com.example.michael.sladders2returnoftheslaguars.modifiers.Modifier;
 import com.example.michael.sladders2returnoftheslaguars.players.Player;
 import com.example.michael.sladders2returnoftheslaguars.rollables.Rollable;
 
@@ -30,7 +31,9 @@ public class Game {
             player.move(diceRoll);
             int newPosition = player.getPosition();
             if (board.isPositionModifier(newPosition)) {
-
+                Modifier modifier = board.getModifier(newPosition);
+                int offset = modifier.getOffset();
+                player.move(offset);
             }
         }
     }

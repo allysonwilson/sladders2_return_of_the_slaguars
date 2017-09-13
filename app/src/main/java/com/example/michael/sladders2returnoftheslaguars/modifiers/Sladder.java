@@ -27,7 +27,7 @@ public class Sladder implements Modifier {
         return type;
     }
 
-    public int offset() {
+    public int getOffset() {
         return endPosition - startPosition;
     }
 
