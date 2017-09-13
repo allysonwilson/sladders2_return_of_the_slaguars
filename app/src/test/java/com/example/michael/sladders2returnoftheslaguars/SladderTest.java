@@ -1,5 +1,8 @@
 package com.example.michael.sladders2returnoftheslaguars;
 
+import com.example.michael.sladders2returnoftheslaguars.modifiers.Sladder;
+import com.example.michael.sladders2returnoftheslaguars.modifiers.SladderType;
+
 import org.junit.Before;
 import org.junit.Test;
 

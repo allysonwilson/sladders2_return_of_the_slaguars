@@ -1,4 +1,4 @@
-package com.example.michael.sladders2returnoftheslaguars;
+package com.example.michael.sladders2returnoftheslaguars.modifiers;
 
 /**
  * Created by michael on 13/09/2017.
