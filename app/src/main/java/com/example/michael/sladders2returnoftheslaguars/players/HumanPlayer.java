@@ -22,4 +22,9 @@ public class HumanPlayer implements Player {
     public int getPosition() {
         return position;
     }
+
+    @Override
+    public void move(int offset) {
+        this.position += offset;
+    }
 }

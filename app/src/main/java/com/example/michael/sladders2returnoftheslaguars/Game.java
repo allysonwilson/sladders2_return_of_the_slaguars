@@ -1,6 +1,7 @@
 package com.example.michael.sladders2returnoftheslaguars;
 
 import com.example.michael.sladders2returnoftheslaguars.players.Player;
+import com.example.michael.sladders2returnoftheslaguars.rollables.Rollable;
 
 import java.util.*;
 
@@ -10,6 +11,27 @@ import java.util.*;
 
 public class Game {
     private ArrayList<Player> players;
+    private Board board;
+    private Rollable dice;
 
+    public Game(ArrayList<Player> players, Board board, Rollable dice) {
+        this.players = players;
+        this.board = board;
+        this.dice = dice;
+    }
 
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+
+    public void playTurn() {
+        for (Player player : players) {
+            int diceRoll = dice.roll();
+            player.move(diceRoll);
+            int newPosition = player.getPosition();
+            if (board.isPositionModifier(newPosition)) {
+
+            }
+        }
+    }
 }

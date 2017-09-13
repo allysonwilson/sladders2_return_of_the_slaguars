@@ -26,7 +26,7 @@ public class PresetBoard implements BoardGenerator {
         modifiers.put(47, new Sladder(47, 19));
         modifiers.put(34, new Sladder(34, 1));
         modifiers.put(87, new Sladder(87, 57));
-        modifiers.put(3, new Sladder(3, -1));
+        modifiers.put(4, new Sladder(4, -1));
         return modifiers;
     }
 }

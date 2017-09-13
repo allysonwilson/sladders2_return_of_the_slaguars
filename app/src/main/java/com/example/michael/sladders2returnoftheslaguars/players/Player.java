@@ -8,5 +8,5 @@ public interface Player {
     String getName();
     int getPosition();
 
-
+    void move(int offset);
 }

@@ -17,4 +17,13 @@ public class Board {
         this.generator = generator;
         modifiers = generator.generateModifiers();
     }
+
+    public boolean isPositionModifier(int position) {
+        return modifiers.containsKey(position);
+    }
+
+
+    public Object getModifier(int position) {
+        return modifiers.get(position);
+    }
 }
